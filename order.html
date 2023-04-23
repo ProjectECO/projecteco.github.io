@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      footer {
+        text-align: center;
+        padding: 3px;
+        background-color: #d2b48c;
+        color: white;
+              }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <img src="logo.png" alt="Logo">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="https://forms.gle/PvgTD2jAMRwvtkV49">Become a student-volunteer</a></li>
+          <li><a href="mailto:hiprojecteco@gmail.com">Contact</a></li>   
+          <div class="dropdown">
+            <a class="dropbtn" href="#">More Information</a>
+            <div class="dropdown-content">
+              <div class="sub-submenu-btn">Safety
+                <div class="extra-submenu">
+                  <a href="#">Plan</a>
+                  <a href="safety.html#pfasbody">PFAS-Free</a>
+                </div>
+              </div>
+              <div class="sub-submenu-btn">Products
+                <div class="extra-submenu">
+                  <a href="#">Plates</a>
+                  <a href="#">Eating Utensils</a>
+                  <a href="#">Cups</a>
+                </div>
+              </div>
+              <div class="sub-submenu-btn">Materials
+                <div class="extra-submenu">
+                  <a href="#">Bagasse</a>
+                  <a href="#">Paper</a>
+                  <a href="#">Wood</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </nav>
+    
+    <div id="form-container"></div>
+
+    <script>
+      function passValueToForm() {
+        // Get the value of the "mycode" parameter from the URL
+        var urlParams = new URLSearchParams(window.location.search);
+        var value = urlParams.get("mycode");
+
+        // Construct the URL for the Google Form with the pre-filled value
+        var formUrl =
+	"https://docs.google.com/forms/d/e/1FAIpQLSfmlK1viH0U8hA-TUHxhozperDBvExtAzTveMSVXXXz1mTgIw/viewform?entry.427077565=" +
+       encodeURIComponent(value);
+
+        // Create an iframe element to embed the Google Form
+        var iframe = document.createElement("iframe");
+        iframe.setAttribute("src", formUrl);
+        iframe.setAttribute("width", "1640");
+        iframe.setAttribute("height", "2020");
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("marginheight", "0");
+        iframe.setAttribute("marginwidth", "0");
+
+        // Append the iframe element to the container div
+        var container = document.getElementById("form-container");
+        container.appendChild(iframe);
+      }
+
+      // Call the passValueToForm function when the page loads
+      window.onload = passValueToForm;
+    </script>
+    <footer>
+        <p>© 2023 Project ECO | hiprojecteco@gmail.com | 510-342-2930</p>
+    </footer>
+  </body>
+</html>
