@@ -202,20 +202,20 @@ footer {
         background-color: #d2b48c;
         color: white;
               }
-#pfasbody {
+#pfasbody, #safe-plan, #products {
         font-family: Arial, sans-serif;
         margin: 50px;
         padding: 100px;
 } 
 h1 {
   font-size: 36px;
-  margin-top: 0;
+  margin-top: 30px;
   text-align: center;
     }
 p {
         font-size: 18px;
         line-height: 1.5;
-        margin-bottom: 20px;
+        margin: 20px;
   }
 section {
         padding: 20px;
@@ -229,7 +229,7 @@ section {
         flex-wrap: wrap;
         background-color: #f0e6d2;
         border-radius: 10px;
-        padding: 10px;
+        padding: 20px;
         margin: 80px;
         font-size: 14px;
         text-align: center;

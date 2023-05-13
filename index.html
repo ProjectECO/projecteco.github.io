@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Website</title>
+    <title>Project ECO</title>
+    <link rel="icon" type="image/x-icon" href="fav.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
@@ -16,26 +17,32 @@
   <body>
     <nav>
       <div class="nav-container">
-        <img src="logo.png" alt="Logo">
+        <a href="index.html"><img src="logo.png" alt="Logo"></a>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="https://forms.gle/PvgTD2jAMRwvtkV49">Become a student-volunteer</a></li>
           <li><a href="mailto:hiprojecteco@gmail.com">Contact</a></li>      
           <li><a href="#order-info">Order</a></li>
           <div class="dropdown">
-            <a class="dropbtn" href="#">More Information</a>
+            <a class="dropbtn" href="#">More Information ↧</a>
             <div class="dropdown-content">
+              <div class="sub-submenu-btn">About Us
+                <div class="extra-submenu">
+                  <a href="safety.html#safe-plan">Info</a>
+                  <a href="safety.html#pfasbody">Goals</a>
+                </div>
+              </div>
               <div class="sub-submenu-btn">Safety
                 <div class="extra-submenu">
-                  <a href="#">Plan</a>
+                  <a href="safety.html#safe-plan">Plan</a>
                   <a href="safety.html#pfasbody">PFAS-Free</a>
                 </div>
               </div>
               <div class="sub-submenu-btn">Products
                 <div class="extra-submenu">
-                  <a href="#">Plates</a>
-                  <a href="#">Eating Utensils</a>
-                  <a href="#">Cups</a>
+                  <a href="products.html#products">Plates</a>
+                  <a href="products.html#products">Eating Utensils</a>
+                  <a href="products.html#products">Cups</a>
                 </div>
               </div>
               <div class="sub-submenu-btn">Materials
@@ -54,7 +61,7 @@
     </div>
     <hr>
     <div class="pricing-table">
-      <h2>Item Pack Pricing</h2>
+      <h2 id=pricing>Item Pack Pricing</h2>
       <table>
         <thead>
           <tr>
@@ -126,7 +133,7 @@
       </table>
     </div>
     <div id="order-info">
-      <p>As our ordering system has not been set up yet, please email hiprojecteco@gmail.com or call 510-342-2930 to order a bundle. Please note all orders must be over $15 for us to be able to come and deliver it to you. If you already have a QR code, you'll be able to use that to order items, instead of by email or call.</p>
+      <p>As our ordering system has not been set up yet, please email hiprojecteco@gmail.com or call 510-342-2930 to order a bundle. Please note all orders must be over $15 for us to be able to come and deliver it to you. If you already have a QR code, you'll be able to use that to order items, instead of by email or call. You can also use this <a href="order.html">link</a> if you do not want to scan (a code is still required). <br> <br> Currently we only supply bundles to customers in Pleasanton, CA and places nearby. <br><br> That being said, we're looking for volunteers who'd be interested in distributing with us. Please click this link if you are interested to <a href="https://forms.gle/PvgTD2jAMRwvtkV49">apply</a>. </p>
     </div>
     <footer>
         <p>© 2023 Project ECO | hiprojecteco@gmail.com | 510-342-2930</p>
