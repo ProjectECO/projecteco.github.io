@@ -12,6 +12,7 @@
         background-color: #d2b48c;
         color: white;
               }
+          
     </style>
   </head>
   <body>
@@ -22,7 +23,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="https://forms.gle/PvgTD2jAMRwvtkV49">Become a student-volunteer</a></li>
           <li><a href="mailto:hiprojecteco@gmail.com">Contact</a></li>      
-          <li><a href="#index.html/order-info">Order</a></li>
+          <li><a href="index.html/#order-info">Order</a></li>
           <div class="dropdown">
             <a class="dropbtn" href="#">More Information ↧</a>
             <div class="dropdown-content">
@@ -58,35 +59,28 @@
     </nav>
     
     <div id="form-container"></div>
+    <div style = "margin: 100px 0 100px 0"; class="login-box">
+      <h2>Customer Verification</h2>
+    <form>
+      <div class="user-box">
+        <input type="text" name="" required="">
+        <label>QR Code:</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="" required="">
+        <label>Phone Number:</label>
+      </div>
+      <a href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Submit
+      </a>
+    </form>
+</div>
 
-    <script>
-      function passValueToForm() {
-        // Get the value of the "mycode" parameter from the URL
-        var urlParams = new URLSearchParams(window.location.search);
-        var value = urlParams.get("mycode");
-
-        // Construct the URL for the Google Form with the pre-filled value
-        var formUrl =
-	"https://docs.google.com/forms/d/e/1FAIpQLSfmlK1viH0U8hA-TUHxhozperDBvExtAzTveMSVXXXz1mTgIw/viewform?entry.427077565=" +
-       encodeURIComponent(value);
-
-        // Create an iframe element to embed the Google Form
-        var iframe = document.createElement("iframe");
-        iframe.setAttribute("src", formUrl);
-        iframe.setAttribute("width", "1640");
-        iframe.setAttribute("height", "2020");
-        iframe.setAttribute("frameborder", "0");
-        iframe.setAttribute("marginheight", "0");
-        iframe.setAttribute("marginwidth", "0");
-
-        // Append the iframe element to the container div
-        var container = document.getElementById("form-container");
-        container.appendChild(iframe);
-      }
-
-      // Call the passValueToForm function when the page loads
-      window.onload = passValueToForm;
-    </script>
+    
     <footer>
         <p>© 2023 Project ECO | hiprojecteco@gmail.com | 510-342-2930</p>
     </footer>
